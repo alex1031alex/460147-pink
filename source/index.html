@@ -5,8 +5,231 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="page-header">
+      <nav class="site-nav site-nav_open">
+        <div class="site-nav__logo">
+          <a class="site-nav__logo-link" href="#">
+          </a>
+        </div>
+        <button class="site-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="promo promo_background_cover">
+        <h1 class="visually-hidden">Приложение "Пинк"</h1>
+        <div class="promo__inner">
+          <p class="promo__slogan">Взгляните на жизнь иначе!</p>
+          <a class="promo__btn btn btn_type_round btn_theme_white" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+          <ul class="promo__list">
+            <li class="promo__item">
+              <a class="promo__link promo__link_ios" href="https://www.apple.com/ru/itunes/"><span class="visually-hidden">AppStore</span></a>
+            </li>
+            <li class="promo__item">
+              <a class="promo__link promo__link_android" href="https://play.google.com/store"><span class="visually-hidden">Google Play</span></a>
+            </li>
+            <li class="promo__item">
+              <a class="promo__link promo__link_windows" href="https://www.microsoft.com/ru-ru/store/b/home"><span class="visually-hidden"> Microsoft Store</span></a>
+            </li>
+          </ul>
+          <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+      <section class="features">
+        <header class="features__header">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <p class="features__intro">Устали от серости мегаполиса?</p>
+          <p class="features__intro">Нам есть, что вам<br> предложить!</p>
+        </header>
+        <div class="features__list-wrapper">
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__image-wrapper">
+              </div>
+              <h3 class="features__title">Поднимает настроение</h3>
+              <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item">
+              <div class="features__image-wrapper">
+              </div>
+              <h3 class="features__title">Меняет мир вокруг</h3>
+              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br> усилить эффект</p>
+            </li>
+            <li class="features__item features__item_active">
+              <div class="features__image-wrapper">
+              </div>
+              <h3 class="features__title">Заводит новых друзей</h3>
+              <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="articles">
+        <div class="articles__list">
+          <h2 class="visually-hidden">Исследование</h2>
+          <article class="articles__item">
+            <h3 class="articles__title">Эффект<br> на 24 часа!</h3>
+            <p class="articles__lead">Британские ученые провели исследования
+            и доказали,<br class="articles__break articles__break_desktop"> что положительный эффект<br class="articles__break articles__break_tablet"> от использования приложения длится целые сутки!</p>
+            <a class="articles__link" href="#">Узнать больше об исследовании</a>
+          </article>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__inner slider">
+          <h2 class="visually-hidden">Отзывы о Пинк</h2>
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <blockquote class="reviews__block">
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <cite class="reviews__author">
+                <span class="reviews__author-name">Николай Петров</span>
+                <span class="reviews__author-info">25 лет, водитель трамвая
+                </span>
+                </cite>
+              </blockquote>
+            </li>
+            <li class="reviews__item slider__item">
+              <blockquote class="reviews__block">
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <cite class="reviews__author">
+                <span class="reviews__author-name">Николай Петров</span>
+                <span class="reviews__author-info">25 лет, водитель трамвая
+                </span>
+                </cite>
+              </blockquote>
+            </li>
+            <li class="reviews__item slider__item">
+              <blockquote class="reviews__block">
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <cite class="reviews__author">
+                <span class="reviews__author-name">Николай Петров</span>
+                <span class="reviews__author-info">25 лет, водитель трамвая
+                </span>
+                </cite>
+              </blockquote>
+            </li>
+          </ul>
+          <div class="slider__toggles slider__toggles_tablet">
+            <button class="slider__toggle slider__toggle_active">1</button>
+            <button class="slider__toggle">2</button>
+            <button class="slider__toggle">3</button>
+          </div>
+          <button class="slider__review-prev">Предыдущий отзыв</button>
+          <button class="slider__review-next">Следующий отзыв</button>
+        </div>
+      </section>
+      <section class="prices">
+        <h2 class="visually-hidden">Тарифные планы</h2>
+        <div class="prices__inner slider">
+          <table class="prices__table">
+            <tr>
+              <th></th>
+              <th class="prices__cell prices__cell_head">
+                <span class="prices__name">База</span>
+                <span class="prices__value">1,99 USD</span>
+              </th>
+              <th class="prices__cell prices__cell_head prices__cell_hit">
+                <span class="prices__name">Стандарт<span>
+                  <span class="prices__value">3,99 USD</span>
+                </th>
+                <th class="prices__cell prices__cell_head">
+                  <span class="prices__name">Анлим</span>
+                  <span class="prices__value">9,99 USD</span>
+                </th>
+              </tr>
+              <tr>
+                <td class="prices__cell prices__cell_body">Розовый фильтр</td>
+                <td class="prices__cell prices__cell_body prices__cell_option_yes">Розовый фильтр</td>
+                <td class="prices__cell prices__cell_body prices__cell_option_yes">Розовый фильтр</td>
+                <td class="prices__cell prices__cell_body prices__cell_option_yes">Розовый фильтр</td>
+              </tr>
+              <tr>
+                <td class="prices__cell prices__cell_body">Смайлики</td>
+                <td class="prices__cell prices__cell_body prices__cell_option_no">Смайлики</td>
+                <td class="prices__cell prices__cell_body prices__cell_option_yes">Смайлики</td>
+                <td class="prices__cell prices__cell_body prices__cell_option_yes">Смайлики</td>
+              </tr>
+              <tr>
+                <td class="prices__cell prices__cell_body">Комментарии</td>
+                <td class="prices__cell prices__cell_body prices__cell_option_no">Комментарии</td>
+                <td class="prices__cell prices__cell_body prices__cell_option_no">Комментарии</td>
+                <td class="prices__cell prices__cell_body prices__cell_option_yes">Комментарии</td>
+              </tr>
+            </table>
+            <div class="slider__toggles slider__toggles_mobile">
+              <button class="slider__toggle">1</button>
+              <button class="slider__toggle slider__toggle_active">2</button>
+              <button class="slider__toggle">3</button>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <header class="contacts__header">
+            <h2 class="visually-hidden">Контакты</h2>
+            <p class="contacts__intro">Остались вопросы?</p>
+            <p class="contacts__intro">Свяжитесь с нами!</p>
+          </header>
+          <div class="contacts__inner">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <span class="contacts__title">Звоните:</span>
+                <span class="contacts__content">+7 (812) 555-66-66</span>
+              </li>
+              <li class="contacts__item">
+                <span class="contacts__title">Пишите:</span>
+                <a href="#" class="contacts__content contacts__content_type_email">mail@htmlacademy.ru</a>
+              </li>
+              <li class="contacts__item">
+                <span class="contacts__title">Приезжайте в гости:</span>
+                <span class="contacts__content">ул. Большая <br> Конюшенная, 19/8</span>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__map-wrapper">
+            <iframe class="contacts__map" src="#"></iframe>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer page-footer_mobile-hidden">
+        <div class="page-footer__logo">
+          <a href="#">
+            <img src="#">
+          </a>
+        </div>
+        <div class="page-footer__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link_twitter" href="https://twitter.com/">Мы в Твиттере</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link_facebook" href="https://facebook.com/">Мы в Фейсбуке</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link_youtube" href="https://youtube.com/">Мы на Ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__icon" src="#">
+            </a>
+          </p>
+        </div>
+      </footer>
   </body>
 </html>
