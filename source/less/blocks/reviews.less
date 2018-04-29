@@ -1,0 +1,115 @@
+//Стили мобильной версии
+.reviews__inner {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 41px;
+  padding-bottom: 40px;
+}
+
+.reviews__list {
+  .list-reset;
+}
+
+.reviews__block {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.reviews__text {
+  .p-reset;
+  margin-bottom: 22px;
+
+  .fs(14px;30px);
+  text-align: center;
+  color: @bitum;
+}
+
+.reviews__author {
+  order: -1;
+  margin-bottom: 14px;
+
+  font-style: normal;
+}
+
+.reviews__author-name {
+  display: block;
+
+  .fs(18px;1.7);
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+}
+
+.reviews__author-info {
+  display: none;
+}
+
+//Стили планшетной версии
+@media (min-width: 660px) {
+  .reviews__inner {
+    width: 660px;
+    padding-top: 38px;
+    padding-bottom: 20px;
+  }
+
+  .reviews__text {
+    margin-bottom: 36px;
+
+    .fs(18px;1.7);
+  }
+
+  .reviews__author {
+    order: 0;
+    margin-bottom: 26px;
+  }
+
+  .reviews__author-info {
+    display: block;
+    text-align: center;
+  }
+
+  .reviews__author-name {
+    .fs(20px;1.5);
+  }
+
+  .reviews__author-info {
+    display: block;
+    .fs(14px;2.1);
+    color: @bitum;
+  }
+}
+
+//Стили десктопной версии
+@media (min-width: 960px) {
+  .reviews__inner {
+    width: 960px;
+    padding-top: 70px;
+    padding-bottom: 18px;
+  }
+
+  .reviews__list {
+    position: relative;
+
+    padding-top: 114px;
+
+    &::before {
+      .pseudo (79px;63px);
+      top: 0;
+      left:440px;
+
+      color: #caced1;
+      background-image:url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .reviews__author-name {
+    .fs(24px;1.25);
+  }
+
+  .reviews__author-info {
+    .fs(18px;1.7);
+  }
+}

@@ -1,0 +1,50 @@
+// Стили мобильной версии
+.submit {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.submit__btn {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.submit__note {
+  .p-reset;
+
+  .fs(14px;2.1);
+  text-transform: uppercase;
+  text-align: center;
+  color: @bitum;
+}
+
+.submit__note-detail {
+  display: none;
+}
+
+.submit__note sup {
+  color: @pink;
+}
+
+// Стили планшетной версии
+@media (min-width: 660px) {
+  .submit {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .submit__btn {
+    width: 300px;
+    margin-bottom: 0;
+  }
+}
+
+// Стили десктопной версии
+@media (min-width: 960px) {
+  .submit__note-detail {
+    display: inline;
+  }
+}

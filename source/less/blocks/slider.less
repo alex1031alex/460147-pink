@@ -1,0 +1,141 @@
+//Стили мобильной версии
+.slider {
+  width: 320px;
+  overflow: hidden;
+}
+
+.slider__list {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.slider__item {
+  box-sizing: border-box;
+  flex-basis: 320px;
+  padding: 0 20px;
+  flex-shrink: 0;
+}
+
+.slider__toggles {
+  text-align: center;
+}
+
+.slider__toggle {
+  box-sizing: border-box;
+  padding: 0;
+
+  width: 6px;
+  height: 6px;
+
+  font-size: 0;
+  line-height: 0;
+
+  background-color: #bec2c7;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  outline: none;
+
+  &:not(:last-child) {
+    margin-right: 11px;
+  }
+
+  &_active {
+    box-sizing: content-box;
+
+    background-color: #fff;
+    border: 3px solid @bitum;
+  }
+}
+
+.slider__toggle:not(.slider__toggle_active):hover {
+  background-color: #7e868f;
+}
+
+.slider__toggle:not(.slider__toggle_active):active {
+  background-color: #e9ebec;
+}
+
+.slider__review-prev,
+.slider__review-next {
+  display: none;
+}
+
+//Стили планшетной версии
+@media (min-width: 660px) {
+  .slider {
+    width: 660px;
+  }
+
+  .slider__item {
+    flex-basis: 660px;
+  }
+
+  .slider__toggles_mobile {
+    display: none;
+  }
+}
+
+//Стили десктопной версии
+@media (min-width: 960px) {
+  .slider {
+    position: relative;
+
+    width: 960px;
+  }
+
+  .slider__item {
+    flex-basis: 960px;
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+
+  .slider__toggles_tablet {
+    display: none;
+  }
+
+  .slider__review-prev,
+  .slider__review-next {
+    position: absolute;
+
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    font-size: 0;
+    line-height: 0;
+
+    background-color: transparent;
+    border-top: 2px solid rgba(40, 54, 69, 0.3);
+    border-left: 2px solid rgba(40, 54, 69, 0.3);
+    border-bottom: none;
+    border-right: none;
+    cursor: pointer;
+
+    outline: none;
+
+    &:hover {
+      border-color: rgba(40, 54, 69, 0.6);
+    }
+
+    &:active {
+      border-color: rgba(40, 54, 69, 0.1);
+    }
+
+  }
+
+  .slider__review-prev {
+    top: 218px;
+    left: 14px;
+
+    transform: rotate(-45deg);
+  }
+
+  .slider__review-next {
+    top: 218px;
+    right: 14px;
+
+    transform: rotate(135deg);
+  }
+}

@@ -1,0 +1,46 @@
+// Стили мобильной версии
+.radio__label {
+  position: relative;
+
+  display: block;
+  padding: 3px 0 3px 70px;
+
+  .fs(18px;1.7);
+  color: @bitum;
+
+  cursor: pointer;
+
+  &::before {
+    .pseudo(36px;36px);
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+
+    background-color: #fff;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #e5e5e5;
+  }
+}
+
+.radio__label:hover::before {
+  box-shadow: 0 0 0 2px @bitum;
+}
+
+.radio__label:active::before {
+  background-color: @pink;
+  box-shadow: 0 0 0 2px @pink;
+}
+
+.radio__field:checked + .radio__label {
+  &::before {
+    background-color: @pink;
+  }
+}
+
+// Стили десктопной версии
+@media (min-width: 960px) {
+  .radio__label {
+    padding-left: 58px;
+  }
+}
