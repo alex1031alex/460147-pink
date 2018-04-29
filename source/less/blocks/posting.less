@@ -1,0 +1,303 @@
+//Стили мобильной версии
+.posting {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+}
+
+ .posting__header {
+  padding: 42px 20px 43px 20px;
+}
+
+.posting__intro {
+  .p-reset;
+  .fs(14px;30px);
+  text-align: center;
+  color: @bitum;
+}
+
+.posting__inner {
+  background-color: @gray;
+}
+
+.posting__photo-wrapper {
+  padding: 20px 20px 0 20px;
+
+  font-size: 0;
+}
+
+.posting__range-wrapper {
+  position: relative;
+
+  min-height: 160px;
+}
+
+.posting__range {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.posting__range_active {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.posting__range-track {
+  position: absolute;
+  top: 124px;
+  left: 40px;
+
+  display: none;
+  width: 240px;
+  height: 2px;
+  background-color: #000;
+
+  &::after {
+    .pseudo(14px;14px);
+    top: -6px;
+    left: 196px;
+    box-sizing: border-box;
+    background-color: @gray;
+    border: 2px solid @pink;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+.posting__icon-container {
+  position: absolute;
+
+  font-size: 0;
+}
+
+.posting__range_crop .posting__icon-container {
+  top: 40px;
+  left: 56px;
+}
+
+.posting__range_fill .posting__icon-container {
+  top: 40px;
+  left: 136px;
+}
+
+.posting__range_contrast .posting__icon-container {
+  top: 46px;
+  left: 226px;
+}
+
+.posting__range_active .posting__range-track {
+  display: block;
+  &::after {
+    background-color: @pink;
+  }
+}
+
+.posting__icon {
+  color: @bitum;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.posting__icon:hover {
+  opacity: 0.5;
+}
+
+.posting__range_active .posting__icon {
+  color: @pink;
+  opacity: 1;
+}
+
+.posting__toggles {
+  padding: 40px 20px 42px 20px;
+}
+
+.posting__btn {
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+//Стили планшетной версии
+@media (min-width: 660px) {
+  .posting {
+    width: 660px;
+  }
+
+  .posting__header {
+    padding: 45px 20px 70px 20px;
+  }
+
+  .posting__intro {
+    .fs(18px;1.7);
+  }
+
+  .posting__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 38px 20px 52px 20px;
+  }
+
+  .posting__photo-wrapper {
+    padding: 18px 0 0 0;
+  }
+
+  .posting__control-wrapper {
+    width: 275px;
+  }
+
+  .posting__range {
+    position: relative;
+    height: 73px;
+    margin-right: 0;
+    margin-left: auto;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .posting__range-track {
+    display: block;
+    width: 202px;
+
+    top: 36px;
+    left: auto;
+    right: 18px;
+  }
+
+  .posting__range_crop .posting__range-track {
+    &::after {
+      left: 155px;
+    }
+  }
+
+  .posting__range_fill .posting__range-track {
+    &::after {
+      left: 35px;
+    }
+  }
+
+  .posting__range_contrast .posting__range-track {
+    &::after {
+      left: 100px;
+    }
+  }
+
+  .posting__range_crop .posting__icon-container {
+    top: 16px;
+    left: -10px;
+  }
+
+  .posting__range_fill .posting__icon-container {
+    top: 16px;
+    left: -10px;
+  }
+
+  .posting__range_contrast .posting__icon-container {
+    top: 20px;
+    left: 0;
+  }
+
+  .posting__icon-container {
+    transform: scale(0.5);
+  }
+
+  .posting__toggles {
+    padding: 63px 0 0 0;
+  }
+
+  .posting__btn {
+    width: 260px;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+}
+
+//Стили десктопной версии
+@media (min-width: 960px) {
+  .posting {
+    width: 960px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .posting__header {
+    padding: 6px 0 64px 0;
+  }
+
+  .posting__intro {
+    .fs(18px;1.7);
+  }
+
+  .posting__inner {
+    padding: 35px 60px 57px 80px;
+  }
+
+  .posting__photo-wrapper {
+    padding: 22px 0 0 0;
+  }
+
+  .posting__control-wrapper {
+    width: 410px;
+  }
+
+  .posting__range-track {
+    display: block;
+    width: 288px;
+
+    top: 36px;
+    left: auto;
+    right: 30px;
+  }
+
+  .posting__range_crop .posting__range-track {
+    &::after {
+      left: 73px;
+    }
+  }
+
+  .posting__range_fill .posting__range-track {
+    &::after {
+      left: 245px;
+    }
+  }
+
+  .posting__range_contrast .posting__range-track {
+    &::after {
+      left: 160px;
+    }
+  }
+
+  .posting__icon-container {
+    transform: scale(1);
+  }
+
+  .posting__range_crop .posting__icon-container {
+    top: 16px;
+    left: 0;
+  }
+
+  .posting__range_fill .posting__icon-container {
+    top: 16px;
+    left: 0;
+  }
+
+  .posting__range_contrast .posting__icon-container {
+    top: 20px;
+    left: 4px;
+  }
+
+  .posting__toggles {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 145px;
+  }
+
+  .posting__btn {
+    width: 183px;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+//Стили мобильной версии
+.popup-notify {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  margin-left: -160px;
+  margin-top: -190px;
+
+  &_closed {
+    display: none;
+  }
+
+  &_opened {
+    display: block;
+  }
+}
+
+.popup-notify__inner {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 30px 0 0 0;
+
+  background-color: #fff;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15),
+  0 -2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.popup-notify__title {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0 20px;
+
+  .fs(18px;1.3);
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+}
+
+.popup-notify__text {
+  .p-reset;
+  margin-bottom: 38px;
+  padding: 0 20px;
+
+  .fs(14px;24px);
+  text-align: center;
+  color: @bitum;
+}
+
+.popup-notify__btn-wrapper {
+  padding: 48px 20px 50px 20px;
+
+  &_gray {
+    background-color: @gray;
+  }
+}
+
+.popup-notify__btn {
+  width: 100%;
+}
+
+//Стили планшетной версии
+@media (min-width: 660px) {
+  .popup-notify {
+    margin-left: -230px;
+    margin-top: -215px;
+  }
+
+  .popup-notify__inner {
+    width: 460px;
+  }
+
+  .popup-notify__title {
+    padding: 0 115px;
+
+    .fs(30px;40px);
+  }
+
+  .popup-notify__text {
+    padding: 0 70px;
+
+    .fs(18px;24px);
+  }
+
+  .popup-notify__text br {
+    display: none;
+  }
+
+  .popup-notify__btn-wrapper {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+//Стили десктопной версии
+@media (min-width: 960px) {
+  .popup-notify {
+    margin-top: -188px;
+    margin-left: -390px;
+  }
+
+  .popup-notify__inner {
+    width: 780px;
+    padding-top: 40px;
+  }
+
+  .popup-notify__text {
+    padding-left: 190px;
+    padding-right: 190px;
+  }
+
+  .popup-notify__btn-wrapper {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+}

@@ -1,0 +1,29 @@
+//Стили мобильной версии
+.page-main {}
+
+.page-main__title {
+  width: 280px;
+  margin: 28px auto 0 auto;
+
+  .fs(24px;1.25);
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+
+//Стили планшетной версии
+@media (min-width: 660px) {
+  .page-main__title {
+    width: 620px;
+    margin-top: 68px;
+    font-size: 50px;
+  }
+}
+
+//Стили десктопной версии
+@media (min-width: 960px) {
+  .page-main__title {
+    width: 940px;
+    margin-top: 62px;
+  }
+}
