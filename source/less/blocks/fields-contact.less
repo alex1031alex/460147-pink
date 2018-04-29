@@ -1,0 +1,141 @@
+// Стили мобильной версии
+.fields-contact {
+  box-sizing: border-box;
+  padding: 32px 20px 41px 20px;
+
+  border: none;
+}
+
+.fields-contact__legend {
+  display: none;
+}
+
+.fields-contact__list {
+  .list-reset;
+}
+
+.fields-contact__item {
+  &:not(:last-child) {
+    margin-bottom: 17px;
+  }
+}
+
+.fields-contact__label {
+  .label-basic-style;
+}
+
+.fields-contact__field {
+  .input-basic-style;
+
+  &:hover {
+    border-color: @bitum;
+  }
+
+  &:active {
+    border-color: @pink;
+  }
+}
+
+.fields-contact__field::-webkit-input-placeholder {
+  .placeholder;
+}
+
+.fields-contact__field::-moz-placeholder {
+  .placeholder;
+}
+
+.fields-contact__field:-moz-placeholder {
+  .placeholder;
+}
+
+.fields-contact__field:-ms-input-placeholder {
+  .placeholder;
+}
+
+// Стили планшетной версии
+@media (min-width: 660px) {
+  .fields-contact {
+    width: 100%;
+    padding: 38px 58px 27px 58px;
+
+    border: 2px solid #e5e5e5;
+  }
+
+  .fields-contact__legend {
+    display: block;
+
+    padding: 0 30px;
+  }
+
+  .fields-contact__item {
+      display: flex;
+      flex-direction: column-reverse;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .fields-contact__field-wrapper {
+    position: relative;
+
+    margin-bottom: 10px;
+
+      &_icon_phone {
+      &::after {
+        .pseudo(63px;100%);
+        top: 0;
+        right: 0;
+
+        background-color: #e5e5e5;
+        background-image: url(../img/icon-phone.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+      &_icon_email {
+      &::after {
+        .pseudo(63px;100%);
+        top: 0;
+        right: 0;
+
+        background-color: #e5e5e5;
+        background-image: url(../img/icon-mail.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
+  .fields-contact__label {
+    margin-bottom: 0;
+    padding-left: 20px;
+  }
+
+  .fields-contact__field {
+    display: block;
+    padding-right: 62px;
+  }
+}
+
+// Стили десктопной версии
+@media (min-width: 960px) {
+  .fields-contact {
+    padding-top: 34px;
+    padding-bottom: 14px;
+  }
+
+  .fields-contact__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .fields-contact__item {
+    flex-basis: 375px;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}

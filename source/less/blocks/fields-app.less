@@ -1,0 +1,75 @@
+// Стили мобильной версии
+.fields-app {
+  position: relative;
+
+  box-sizing: border-box;
+  padding: 110px 20px 44px 20px;
+
+  background-color: @gray;
+  border: none;
+}
+
+.fields-app__legend {
+  position: absolute;
+  top: 38px;
+  left: calc((320px-220px)/2);
+
+  width: 220px;
+}
+
+.fields-app__list {
+  .list-reset;
+}
+
+.fields-app__item {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+// Стили планшетной версии
+@media (min-width: 660px) {
+  .fields-app {
+    width: 100%;
+    padding: 46px 10px 52px 60px;
+
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+  }
+
+  .fields-app__legend {
+    position: static;
+
+    width: auto;
+    padding: 0 24px;
+  }
+}
+
+// Стили десктопной версии
+@media (min-width: 960px) {
+  .fields-app {
+    flex-basis: 435px;
+    padding: 46px 0 0 0;
+  }
+
+  .fields-app__legend {
+    padding: 0 24px;
+  }
+
+  .fields-app__list {
+    padding-left: 76px;
+  }
+
+  .fields-app__item {
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
+  .fields-app__label {
+    padding-left: 132px;
+    padding-right: 0;
+    &::before {
+      left: calc(132px-58px);
+    }
+  }
+}

@@ -1,0 +1,72 @@
+// Стили мобильной версии
+.form__inner {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__fields-name {
+  order: 1;
+  margin: 0;
+}
+
+.form__fields-app {
+  order: 4;
+  margin: 0 0 36px 0;
+}
+
+.form__fields-contact {
+  order: 3;
+  margin: 0;
+}
+
+.form__fields-action {
+  order: 2;
+  margin: 0;
+}
+
+.form__fields-comment {
+  order: 5;
+  margin: 0;
+}
+
+.form__submit {
+  order: 6;
+  margin-bottom: 18px;
+}
+
+// Стили планшетной версии
+@media (min-width: 660px) {
+  .form__inner {
+    padding: 0 20px;
+  }
+
+  .form__fields-app {
+    order: 2;
+    margin-bottom: 58px;
+  }
+
+  .form__fields-contact {
+    margin-bottom: 56px;
+  }
+
+  .form__submit {
+    margin-bottom: 48px;
+  }
+}
+
+// Стили десктопной версии
+@media (min-width: 960px) {
+  .form__inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .form__submit {
+    margin-bottom: 0;
+  }
+}
