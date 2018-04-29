@@ -1,0 +1,56 @@
+// Стили мобильной версии
+.fields-action {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding: 112px 20px 0 20px;
+
+  background-color: @gray;
+  border: none;
+}
+
+.fields-action__legend {
+  position: absolute;
+  top: 38px;
+  left: calc((320px-220px)/2);
+
+  width: 220px;
+}
+
+.fields-action__list {
+  .list-reset;
+}
+
+.fields-action__item {
+    margin-bottom: 42px;
+}
+
+// Стили планшетной версии
+@media (min-width: 660px) {
+  .fields-action {
+    order: 4;
+    margin-bottom: 58px;
+    padding: 44px 0 4px 58px;
+
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+  }
+
+  .fields-action__legend {
+    position: static;
+
+    width: auto;
+    padding: 0 30px;
+  }
+}
+
+// Стили десктопной версии
+@media (min-width: 960px) {
+  .fields-action__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 172px;
+  }
+}

@@ -1,0 +1,43 @@
+//Стили мобильной версии
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__text {
+  display: block;
+  margin-right: 12px;
+
+  .fs(14px;1.3);
+  text-align: center;
+  color: @bitum;
+}
+
+.copyright__link {
+  display: inline-block;
+
+  cursor: pointer;
+}
+
+.copyright__link:hover .copyright__icon {
+  color: @bitum;
+}
+
+.copyright__link:active .copyright__icon {
+  color: rgba(40, 54, 69, 0.3);
+}
+
+.copyright__icon {
+  color: @pink;
+}
+
+//Стили планшетной версии
+@media (min-width: 660px) {}
+
+//Стили десктопной версии
+@media (min-width: 960px) {
+  .copyright__text {
+    .fs(18px;1.0);
+  }
+}

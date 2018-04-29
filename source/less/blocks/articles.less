@@ -1,0 +1,284 @@
+//Стили мобильной версии
+.gallery {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.gallery__header {
+  box-sizing: border-box;
+  padding: 46px 36px 49px 36px;
+}
+
+.gallery__intro {
+  .p-reset;
+  .fs(14px;30px);
+  text-align: center;
+  color: @bitum;
+}
+
+.gallery__list {
+  .list-reset;
+  margin: 0 20px;
+}
+
+.gallery__item {
+  &:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+}
+
+.gallery__post {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: @gray;
+}
+
+.gallery__post_top::before {
+  position: absolute;
+  content: "Панорама дня";
+  top: 0;
+  right: 0;
+
+  width: 140px;
+  height: 36px;
+
+  .fs(12px;36px);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+
+  background-color: @pink;
+}
+
+.gallery__post_top .gallery__image-wrapper {
+  margin: 0 -20px;
+}
+
+.gallery__post-wrapper {
+  padding: 17px 18px 20px 18px;
+}
+
+.gallery__post_top .gallery__image {
+  width: 320px;
+}
+
+.gallery__image {
+  display: block;
+}
+
+.gallery__post-author {
+  .fs(14px;24px);
+  .p-reset;
+  font-weight: 700;
+  color: @bitum;
+}
+
+.gallery__post-time {
+  .fs(12px;2.0);
+  font-weight: 300;
+  text-transform: uppercase;
+  color: @bitum;
+}
+
+.gallery__post-text {
+  .p-reset;
+  margin-bottom: 10px;
+
+  .fs(14px;24px);
+  color: @bitum;
+}
+
+.gallery__post-like {
+  position: relative;
+
+  .p-reset;
+  padding-left: 32px;
+
+  .fs(12px;24px);
+  text-transform: uppercase;
+  color: @pink;
+}
+
+.gallery__post-like-toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 13px;
+  height: 100%;
+
+  .fs(0px;0);
+
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+//Стили планшетной версии
+@media (min-width: 660px) {
+  .gallery {
+    width: 660px;
+    overflow: hidden;
+  }
+
+  .gallery__intro {
+    .fs(18px;30px);
+    color: @bitum;
+  }
+
+  .gallery__header {
+    padding: 91px 66px 76px 66px;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .gallery__item {
+    box-sizing: border-box;
+    width: 300px;
+    &:not(:last-child),
+    &:last-child {
+    margin-bottom: 19px;
+    }
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery__item_top:not(:last-child) {
+    width: auto;
+    flex-grow: 1;
+    margin-bottom: 50px;
+  }
+
+  .gallery__post {
+    flex-grow: 1; //Чтобы .gallery-post растягивался по высоте на весь .gallery-item
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery__post_top {
+    height: auto;
+  }
+
+  .gallery__post_top::before {
+    top: 58px;
+  }
+
+  .gallery__post-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; //Чтобы .gallery-post-wrapper растягивался по высоте на весь .gallery-post
+    min-height: 156px;
+    padding: 24px 30px 24px 26px;
+
+  }
+
+  .gallery__post-like {
+    margin-bottom: 0;
+    margin-top: auto;
+  }
+
+  .gallery__post_top .gallery__post-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    justify-content: space-between;
+    min-height: 0;
+    padding: 22px 26px 26px 26px;
+}
+
+  .gallery__post_top .gallery__image-wrapper {
+    margin: 0 -40px;
+  }
+
+  .gallery__image {
+    width: 300px;
+  }
+
+  .gallery__post_top .gallery__image {
+    width: 700px;
+  }
+
+  .gallery__post_top .gallery__post-author {
+    order: -2;
+  }
+
+  .gallery__post_top .gallery__post-like {
+    order: -1;
+  }
+
+  .gallery__post-text {
+    margin-bottom: 0;
+  }
+
+  .gallery__post-like {
+    padding-left: 0;
+    padding-right: 32px;
+  }
+
+  .gallery__post-like-toggle {
+    top: 0;
+    left: auto;
+    right: 0;
+  }
+}
+
+//Стили десктопной версии
+@media (min-width: 960px) {
+  .gallery {
+    width: auto;
+  }
+
+  .gallery__header {
+    width: 960px;
+    margin: 0 auto;
+    padding: 92px 160px 88px 160px;
+  }
+
+  .gallery__list {
+    box-sizing: border-box;
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto 0 auto;
+  }
+
+  .gallery__item {
+    &:not(:last-child),
+    &:last-child {
+      margin-bottom: 52px;
+    }
+  }
+
+  .gallery__post_top .gallery__image-wrapper {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .gallery__post_top .gallery__image {
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+  }
+
+    .gallery__post_top .gallery__post-wrapper {
+      padding: 24px 28px 23px 28px;
+  }
+}

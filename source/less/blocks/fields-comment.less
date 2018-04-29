@@ -1,0 +1,60 @@
+// Стили мобильной версии
+.fields-comment {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px 20px 48px 20px;
+
+  border: none;
+}
+
+.fields-comment__field {
+  .input-basic-style;
+  min-height: 200px;
+  padding: 16px 18px;
+}
+
+.fields-comment__field::-webkit-input-placeholder {
+  .placeholder;
+}
+
+.fields-comment__field::-moz-placeholder {
+  .placeholder;
+}
+
+.fields-comment__field:-moz-placeholder {
+  .placeholder;
+}
+
+.fields-comment__field:-ms-input-placeholder {
+  .placeholder;
+}
+
+// Стили планшетной версии
+@media (min-width: 660px) {
+  .fields-comment {
+    margin-bottom: 68px;
+    padding: 36px 58px 48px 58px;
+
+    border: 2px solid #e5e5e5;
+  }
+
+  .fields-comment__legend {
+    padding: 0 36px;
+  }
+
+  .fields-comment__field {
+    min-height: 194px;
+    padding: 16px 18px;
+  }
+}
+
+@media (min-width: 960px) {
+  .fields-comment {
+    margin-bottom: 66px;
+    padding-bottom: 40px;
+  }
+
+  .fields-comment__field {
+    min-height: 126px;
+  }
+}
