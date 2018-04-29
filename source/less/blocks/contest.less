@@ -1,0 +1,50 @@
+//Стили мобильной версии
+.contest {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.contest__intro {
+  .p-reset;
+  box-sizing: border-box;
+  padding: 46px 20px 36px 20px;
+
+  .fs(14px;2.1);
+  text-align: center;
+  color: @bitum;
+}
+
+//Стили планшетной версии
+@media (min-width: 660px) {
+  .contest {
+    width: 660px;
+  }
+
+  .contest__intro {
+    padding: 90px 70px 72px 70px;
+
+    .fs(18px;1.7);
+  }
+
+}
+
+// Стили десктопной версии
+@media (min-width: 960px) {
+  .contest {
+    width: auto;
+  }
+
+  .contest__intro {
+    width: 960px;
+    margin: 0 auto;
+    padding: 92px 80px 72px 80px;
+  }
+
+  .contest__intro-appeal {
+    display: inline;
+  }
+
+  .contest__note-detail {
+    display: inline;
+  }
+}
