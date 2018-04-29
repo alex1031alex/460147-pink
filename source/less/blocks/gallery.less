@@ -1,0 +1,27 @@
+//Стили мобильной версии
+.gallery__intro {
+  .p-reset;
+  .fs(14px;30px);
+  text-align: center;
+  color: @bitum;
+}
+
+//Стили планшетной версии
+@media (min-width: 660px) {
+  .gallery {
+    width: 660px;
+    overflow: hidden;
+  }
+
+  .gallery__intro {
+    .fs(18px;30px);
+    color: @bitum;
+  }
+}
+
+//Стили десктопной версии
+@media (min-width: 960px) {
+  .gallery {
+    width: auto;
+  }
+}
