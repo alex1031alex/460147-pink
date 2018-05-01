@@ -50,6 +50,21 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 18px;
+      top: 55px;
+
+      box-sizing: border-box;
+      display: block;
+      width: 202px;
+      height: 202px;
+
+      border: 15px solid @pink;
+      border-radius: 50%;
+    }
   }
 
   .articles__title {
@@ -113,6 +128,14 @@
 
       font-size: 120px;
       line-height: 187px;
+    }
+
+    &::after {
+      left: 22px;
+      top: 70px;
+
+      width: 253px;
+      height: 253px;
     }
   }
 
