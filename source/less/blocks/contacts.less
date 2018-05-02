@@ -2,13 +2,11 @@
 .contacts {
   width: 320px;
   margin: 0 auto;
-
 }
 
 .contacts__header {
-  padding-top:42px;
+  padding-top: 42px;
   padding-bottom: 28px;
-
 }
 
 .contacts__intro {
@@ -25,19 +23,19 @@
   z-index: 1;  //Чтобы треугольник перекрыл карту
 
   padding-bottom: 34px;
+
   &::before {
     .pseudo(50%;35px);
     bottom: -35px;
     left: 0;
-    background-image:
-    linear-gradient(to right top, transparent 0, transparent 50%; #fff 50%);
+    background-image: linear-gradient(to right top, transparent 0, transparent 50%, #ffffff 50%);
   }
+
   &::after {
     .pseudo(50%;35px);
     bottom: -35px;
     left: 50%;
-    background-image:
-    linear-gradient(to right bottom, #fff 50%; transparent 50%);
+    background-image: linear-gradient(to right bottom, #ffffff 50%, transparent 50%);
   }
 }
 
@@ -47,7 +45,8 @@
 
 .contacts__item {
   .p-reset;
-    &:not(:last-child) {
+
+  &:not(:last-child) {
     margin-bottom: 17px;
   }
 
@@ -80,6 +79,7 @@
     color: @bitum;
     text-decoration: underline;
   }
+
   &_type_email:active {
     color: @bitum;
     opacity: 0.3;
