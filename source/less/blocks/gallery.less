@@ -51,7 +51,7 @@
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  color: #fff;
+  color: #ffffff;
 
   background-color: @pink;
 }
@@ -146,9 +146,10 @@
   .gallery__item {
     box-sizing: border-box;
     width: 300px;
+
     &:not(:last-child),
     &:last-child {
-    margin-bottom: 19px;
+      margin-bottom: 19px;
     }
 
     display: flex;
@@ -182,12 +183,13 @@
     flex-grow: 1; //Чтобы .gallery-post-wrapper растягивался по высоте на весь .gallery-post
     min-height: 156px;
     padding: 24px 30px 24px 26px;
-
   }
 
   .gallery__post-like {
-    margin-bottom: 0;
     margin-top: auto;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 32px;
   }
 
   .gallery__post_top .gallery__post-wrapper {
@@ -197,7 +199,7 @@
     justify-content: space-between;
     min-height: 0;
     padding: 22px 26px 26px 26px;
-}
+  }
 
   .gallery__post_top .gallery__image-wrapper {
     margin: 0 -40px;
@@ -221,11 +223,6 @@
 
   .gallery__post-text {
     margin-bottom: 0;
-  }
-
-  .gallery__post-like {
-    padding-left: 0;
-    padding-right: 32px;
   }
 
   .gallery__post-like-toggle {
@@ -278,7 +275,7 @@
     line-height: 0;
   }
 
-    .gallery__post_top .gallery__post-wrapper {
-      padding: 24px 28px 23px 28px;
+  .gallery__post_top .gallery__post-wrapper {
+    padding: 24px 28px 23px 28px;
   }
 }

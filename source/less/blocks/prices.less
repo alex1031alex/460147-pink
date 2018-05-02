@@ -6,8 +6,7 @@
   padding: 92px 0 48px 0;
 
   background-color: @gray;
-  background-image:
-  linear-gradient(to right bottom, #ffffff 0%, #ffffff 50%, #f2f2f2 50%, #f2f2f2 100%);
+  background-image: linear-gradient(to right bottom, #ffffff 0%, #ffffff 50%, #f2f2f2 50%, #f2f2f2 100%);
   background-repeat: no-repeat;
   background-size: 100% 30px;
   background-position: 0 0;
@@ -37,7 +36,7 @@
 
     .fs(18px;1.7);
     text-transform: uppercase;
-    color: #fff;
+    color: #ffffff;
 
     background-color: @bitum;
   }
@@ -51,12 +50,13 @@
     text-transform: uppercase;
     color: @bitum;
 
-    background-color: #fff;
+    background-color: #ffffff;
     border: 2px solid #e5e5e5;
   }
 
   &_hit {
     position: relative;
+
     &::after {
       content: "ХИТ";
       position: absolute;
@@ -104,8 +104,6 @@
   font-weight: 300;
 }
 
-.prices__toggles {}
-
 //Стили планшетной версии
 @media (min-width: 660px) {
   .prices {
@@ -142,13 +140,14 @@
       padding-left: 16px;
 
       text-transform: none;
+
       &:not(:first-child) {
         font-size: 0;
       }
     }
 
     &_hit {
-        &::after {
+      &::after {
         top: 4px;
         left: -42px;
       }

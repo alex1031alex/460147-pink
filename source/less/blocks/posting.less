@@ -50,7 +50,7 @@
   display: none;
   width: 240px;
   height: 2px;
-  background-color: #000;
+  background-color: #000000;
 
   &::after {
     .pseudo(14px;14px);
@@ -87,6 +87,7 @@
 
 .posting__range_active .posting__range-track {
   display: block;
+
   &::after {
     background-color: @pink;
   }
@@ -113,6 +114,7 @@
 
 .posting__btn {
   width: 100%;
+
   &:not(:last-child) {
     margin-bottom: 12px;
   }
@@ -207,11 +209,11 @@
 
   .posting__btn {
     width: 260px;
+
     &:not(:last-child) {
       margin-bottom: 25px;
     }
   }
-
 }
 
 //Стили десктопной версии
@@ -296,6 +298,7 @@
 
   .posting__btn {
     width: 183px;
+
     &:not(:last-child) {
       margin-bottom: 0;
     }
