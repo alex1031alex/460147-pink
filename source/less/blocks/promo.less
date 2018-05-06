@@ -10,6 +10,11 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: 320px 462px;
   background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 1400px auto;
+  }
 }
 
 .promo__inner {
@@ -21,6 +26,11 @@
   background-size: 258px 286px;
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-size: 516px auto;
+  }
 }
 
 .promo__slogan {
@@ -87,6 +97,11 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: auto 729px;
     background-position: center 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: auto 1458px;
+    }
   }
 
   .promo__inner {
@@ -97,6 +112,11 @@
     background-size: 700px 545px;
     background-repeat: no-repeat;
     background-position: -20px 2px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-size: 1400px auto;
+    }
   }
 
   .promo__slogan {
@@ -146,6 +166,14 @@
 
     &_background_fixed {
       background-size: 2560px 853px;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-size: 5120px 1706px;
+      }
+    }
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 
@@ -162,6 +190,11 @@
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-size: 1050px 645px;
     background-position: 28px 2px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-size: 2100px auto;
+    }
   }
 
   .promo__slogan {
