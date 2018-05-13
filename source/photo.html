@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
@@ -73,7 +74,7 @@
               <div class="gallery__post-wrapper">
                 <p class="gallery__post-author">Анна <span class="gallery__post-time">(5 минут назад)</span></p>
                 <p class="gallery__post-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <p class="gallery__post-like"><span class="gallery__post-like-toggle">Поставить лайк</span></a>Нравится: 215</p>
+                <p class="gallery__post-like"><span class="gallery__post-like-toggle">Поставить лайк</span>Нравится: 215</p>
               </div>
             </figure>
           </li>
@@ -206,6 +207,7 @@
         </ul>
       </section>
       <section class="posting">
+        <h2 class="visually-hidden">Выложите ваше фото</h2>
         <header class="posting__header">
           <p class="posting__intro">Затмите их всех!<br>
           Выкладывайте все, что накопилось в телефоне!</p>
@@ -216,8 +218,8 @@
               <source type="image/webp" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
               <source type="image/webp" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
-              <source srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-              <source srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
               <img class="posting__photo" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Ваши фото">
             </picture>
           </div>
@@ -303,6 +305,6 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
