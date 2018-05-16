@@ -29,6 +29,9 @@
 
 .fields-name__field {
   .input-basic-style;
+  .fs(18px;30px);
+
+  min-height: 64px;
 
   &:hover {
     border-color: @bitum;
@@ -58,7 +61,6 @@
 // Стили планшетной версии
 @media (min-width: 660px) {
   .fields-name {
-    margin-bottom: 58px;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
@@ -91,6 +93,7 @@
 @media (min-width: 960px) {
   .fields-name {
     flex-basis: 435px;
+    min-height: 307px;
   }
 
   .fields-name__item {
@@ -101,7 +104,7 @@
 
   .fields-name__legend {
     display: block;
-    line-height: 8px;
+    // line-height: 8px;
   }
 
   .fields-name__legend-text {

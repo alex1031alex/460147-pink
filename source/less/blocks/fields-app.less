@@ -17,6 +17,10 @@
   width: 220px;
 }
 
+.fields-app__legend-text {
+
+}
+
 .fields-app__list {
   .list-reset;
 }
@@ -31,7 +35,7 @@
 @media (min-width: 660px) {
   .fields-app {
     width: 100%;
-    padding: 46px 10px 52px 60px;
+    padding: 46px 10px 54px 60px;
 
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
@@ -42,18 +46,22 @@
 
     width: auto;
     padding: 0 24px;
+
+    background-color: #ffffff;
   }
 }
 
 // Стили десктопной версии
 @media (min-width: 960px) {
+
   .fields-app {
+    position: relative;
     flex-basis: 435px;
-    padding: 46px 0 0 0;
+    padding: 50px 0 0 0;
   }
 
   .fields-app__legend {
-    padding: 0 24px;
+    text-align: center;
   }
 
   .fields-app__list {

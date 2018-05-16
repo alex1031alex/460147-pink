@@ -49,7 +49,7 @@ module.exports = function(grunt) {
 
       sprite: {
         files: {
-          "build/img/sprite-auto.svg": ["source/img/icon-*.svg"]
+          "build/img/sprite-auto.svg": ["source/img/s-*.svg"]
         }
       }
     },

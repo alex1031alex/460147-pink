@@ -21,7 +21,8 @@
     "load-grunt-tasks": "^4.0.0",
     "posthtml-include": "^1.1.0",
     "stylelint": "9.2.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "svgxuse": "^1.2.6"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
