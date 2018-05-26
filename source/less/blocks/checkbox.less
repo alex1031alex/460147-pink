@@ -38,6 +38,10 @@
   }
 }
 
+.checkbox__field:checked + .checkbox__label:active::before {
+  border-color: @pink;
+}
+
 // Стили планшетной версии
 @media (min-width: 660px) {
   .checkbox__label {
